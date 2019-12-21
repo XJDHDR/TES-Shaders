@@ -1,0 +1,1 @@
+Copy the shaders you want to decompile from the "Disasm" folder into this one.

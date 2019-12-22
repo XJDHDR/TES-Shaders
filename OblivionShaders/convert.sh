@@ -11,7 +11,7 @@ for dis in Disassembly/*.dis; do
   echo prepare $dis
   rm -f PseudoC/$fle.version
 
-    ./arrays.sh Disassembly/$fle.dis PseudoC/$fle.dis
+    bash ./arrays.sh Disassembly/$fle.dis PseudoC/$fle.dis
 
   $SED $SFLAGS -e '/    \([pvs]\+\)_\([0-9]\+\)_\([x0-9]\+\)/!d'			\
 	       -e 's/    \([vs]\+\)_\([2]\+\)_\([x]\+\)/VERSION=\1_\2_a/'		\
